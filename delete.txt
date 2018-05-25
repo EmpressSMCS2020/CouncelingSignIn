@@ -1,0 +1,9 @@
+// set property something or anothe r
+//automatically initialize spreadhseet?
+Fillo fillo=new Fillo();
+Connection connection=fillo.getConnection(fileloc);
+String insert = "INSERT INTO sheet1(First, Last, ID, Teacher, Councelor, Reason) VALUES(";
+String data = "'" + first + "'" + "," +"'" + last+ "'" +  "," + "'" + id + "'"+ ","+ "'" + teacher + "'"+ ","+ "'" + councelor + "'"+ ","+ "'" + reason + "'"+ ",";
+String strQuery = insert + data + ")";
+connection.executeUpdate(strQuery);
+connection.close()
