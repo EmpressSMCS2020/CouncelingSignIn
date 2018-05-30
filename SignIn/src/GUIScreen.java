@@ -28,6 +28,7 @@ public class GUIScreen extends JFrame implements ActionListener{
 //FIELDS------------------------------------------------------------------------------------------------------------------------------
 	public String filepath;
 	public Color logocolor;
+	public String getnameclone;
 	
 	public final static JPanel s1 = new JPanel(new GridBagLayout());
 	public static JLabel logolabel;
@@ -308,6 +309,7 @@ public class GUIScreen extends JFrame implements ActionListener{
 	    	System.out.println("you have clicked the continue button");
 			String getname = "fullnameversionof:" + (StartApp.ID); 									//change this to get actual name from file
 	    	switchScreens(getname);
+			getnameclone = getname;
 		}
 		
 		else if(e.getSource()==cancel) {
