@@ -26,12 +26,12 @@ public class StartApp {
 	
 //data logging info
 	public static String ID = "";
-	private static String getname = GUIScreen.getname;															//find a way to get name (not here)
+	private static String getname = GUIScreen.getnameclone;															//find a way to get name (not here)
 	public static String REASON = "";
 	public static String TEACHER = "";
 	public static String COUNSELOR = "";
-	public static String FIRST = "";
-	public static String LAST = "";
+	public static String FIRST = getname.substring(0,getname.indexOf(' '));
+	public static String LAST = getname.substring(getname.indexOf(' '),getname.length());
 	public static String HOUSE = "";	
 	public static String GRADE = "";
 	public static Fillo fillo=new Fillo();
